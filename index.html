@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Voz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Bienvenido al Control de Voz</h1>
+    <p class="text-center" id="status">Esperando comando...</p>
+    <table class="centered">
+      <tr>
+        <td class="table-cell">Recámara<br><span id="recamaraStatus">Luz apagada, Ventilador apagado</span></td>
+        <td class="table-cell">Sala<br><span id="salaStatus">Luz apagada, Cortinas cerradas</span></td>
+      </tr>
+      <tr>
+        <td class="table-cell">Jardín<br><span id="jardinStatus">Luz apagada</span></td>
+        <td class="table-cell">Seguridad<br><span id="seguridadStatus">Cámaras apagadas, Alarma desactivada</span></td>
+      </tr>
+    </table> <br><br>
+
+    <button id="toggleInstructionsBtn" onclick="toggleInstructions()">Instrucciones de Comandos</button>
+    <div class="instructions" id="instructionsPanel" style="display:none;">
+      <h2>Instrucciones de Comandos</h2>
+      <ul>
+        <li>Recámara: "Enciende/Apaga la luz de la recámara"</li>
+        <li>Sala: "Enciende/Apaga la luz de la sala"</li>
+        <li>Jardín: "Enciende/Apaga la luz del jardín"</li>
+        <li>Ventilador: "Enciende/Apaga el ventilador"</li>
+        <li>Cámaras de seguridad: "Enciende/Apaga las cámaras de seguridad"</li>
+        <li>Alarma: "Enciende/Apaga la alarma de la casa"</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  </div>
+  <script src="controlVoz.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    border: 2px solid white; /* Borde blanco añadido */
+  }
+
+  p{
+    color: rgb(255, 255, 255);
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+
+  h2{
+    color: rgb(255, 255, 255);
+  }
+
+  ul{
+    color: white;
+  }
+
+
+
+
+  #toggleInstructionsBtn {
+    padding: 10px;
+    background-color: #696969;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .instructions {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+
+
+  
+  .centered {
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .table-cell {
+    border: 500px solid white; /* Reset to add borders for reconfiguration */
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Remove all borders initially */
+  .table-cell {
+    border: none;
+  }
+  
+  /* Add only internal borders */
+  .centered tr:not(:last-child) .table-cell {
+    border-bottom: 1px solid white;
+  }
+  
+  .centered tr .table-cell:not(:last-child) {
+    border-right: 1px solid white;
+  }
+  
